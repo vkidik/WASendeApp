@@ -1,0 +1,53 @@
+@import url('base.css');
+
+body{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        height: 25%;
+        width: 100%;
+        background-color: var(--original-whatsapp-background);
+        top: 0;
+        z-index: 1;
+    }
+
+    & iframe{
+        box-shadow: var(--window-box-shadow);
+        z-index: 2;
+    }
+
+    & .data{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 2;
+        background-color: var(--white-background);
+        box-shadow: var(--window-box-shadow);
+        padding: var(--base-padding);
+        box-sizing: border-box;
+
+
+        & label.input-data{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            & span{
+                margin-bottom: var(--default-margin);
+            }
+
+            & .input{
+                resize: none;
+                border: 2px solid var(--original-whatsapp-background);
+                padding: var(--base-padding);
+                border-radius: calc(var(--default-margin) / 1.5);
+                font-size: var(--default-font-size);
+            }
+        }
+    }
+}

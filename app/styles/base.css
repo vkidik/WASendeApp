@@ -1,0 +1,52 @@
+@import url("fonts.css");
+
+:root{
+    --original-whatsapp-background:#00a884;
+    --default-font-size: 16px;
+    --window-box-shadow: 0 17px 50px 0 rgba(11,20,26,.19), 0 12px 15px 0 rgba(11,20,26,.24);
+    --default-margin: 8px;
+    --white-background: #FFFFFF;
+    --base-padding: 6px 12px;
+    --height-windows: 500px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: lighter;
+    font-size: var(--default-font-size);
+    /* width: 1200px;
+    height: 600px; */
+}
+
+body{
+    & iframe{
+        width: 800px;
+        height: var(--height-windows);
+    }
+
+    & .data{
+        height: var(--height-windows);
+    }
+}
+
+.btn, input#file-upload-button{
+    padding: 4px 10px;
+    border: 2px solid var(--original-whatsapp-background);
+    background-color: var(--white-background);
+    font-size: var(--default-font-size);
+    color: var(--original-whatsapp-background);
+    font-weight: bold;
+
+    &:hover{
+        background-color: var(--original-whatsapp-background);
+        color: var(--white-background);
+        cursor: pointer;
+    }
+}

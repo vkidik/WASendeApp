@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WASender</title>
+    <link rel="stylesheet" href="app/styles/style.css">
+</head>
+<body>
+    <iframe src="https://web.whatsapp.com/" frameborder="0"></iframe>
+    <div class="data">
+        <label for="base" class="input-data"><span>1.База:</span><input type="file" name="base" id="base"></label>
+        <label for="count-msg" class="input-data"><span>2.Количество:</span><input class="input" type="text" name="count-msg" id="count-msg"></label>
+        <label for="file" class="input-data"><span>Вложение:</span><input type="file" name="file" id="file"></label>
+        <label for="msg" class="input-data"><span>3.Текст:</span><textarea class="input" name="msg" id="msg" cols="30" rows="10"></textarea></label>
+        <button class="btn" id="start">Запустить</button>
+    </div>
+
+    <script src="app/module/app.js"></script>
+</body>
+</html>
